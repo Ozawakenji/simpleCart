@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+    <title>Product Page</title>
+
+</head>
+
+<body>
+<header>
+	<div class="cart">
+            <a href="#" id="cart-toggle-btn">My Cart <span id="cart-counter">(0)</span></a>
+            <div class="cart-items" id="cart-items"></div>
+        </div>
+        
+</header>
+    <div class="container">
+        <div class="product">
+            <div><img src="https://mrdevelopertestassets.s3.ap-southeast-2.amazonaws.com/classic-tee.jpg" alt="Classic Tee"></div>
+            <div class="product-info">
+                <h2>Classic Tee</h2>
+				<p class="price">$<span id="product-price"></span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>Size *</p>
+				<p id="error-message" style="color: #C90000;"></p>
+                <div class="size-options">
+                    <div class="size-option">
+                        <input type="radio" id="size-s" name="size" value="S">
+                        <label for="size-s">S</label>
+                    </div>
+                    <div class="size-option">
+                        <input type="radio" id="size-m" name="size" value="M">
+                        <label for="size-m">M</label>
+                    </div>
+                    <div class="size-option">
+                        <input type="radio" id="size-l" name="size" value="L">
+                        <label for="size-l">L</label>
+                    </div>
+                </div>
+                <button id="add-to-cart-btn">ADD TO CART</button>
+				
+            </div>
+			
+        </div>        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
